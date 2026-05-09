@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-	<meta name="description" content="Contact page of Abdinasir Lee's portfolio website.">
+	<meta name="description" content="Contact Abdinasir about web development, computer science, or digital marketing. Email, phone, and contact form available.">
 	<title>Abdinasir Portfolio :: Contact</title>
-	<!--Font Awesome and Bootstrap-->
+	<!-- Font Awesome and Bootstrap load before style.css so my custom rules win -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<img src="images/logo.png" alt="logo" height="80" width="200" class="img-fluid logo">
+		<img src="images/logo.png" alt="Abdinasir Sharif lion logo" height="80" width="200" class="img-fluid logo">
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -25,23 +25,29 @@
 
 	<main>
 		<div class="container-fluid">
+			<!-- Contact page intro row -->
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12 contact-header">
 					<h1>Contact Me</h1>
 					<p>Feel free to reach out — I'd love to connect about web development, computer science, or digital marketing.</p>
 				</div>
 			</div>
+
+			<!-- Two-column row: contact info on the left, contact form on the right (col-sm-6 each so the form does not look sloppy at full width) -->
 			<div class="row contact-row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 contact-info">
 					<h2>My Info</h2>
 					<p><i class="fa fa-envelope"></i> Email: <a href="mailto:nasirsharifhope@gmail.com">nasirsharifhope@gmail.com</a></p>
-					<p><i class="fa fa-phone"></i> Phone: <a href="tel:1111111111">(503) 555-5555</a></p>
+					<p><i class="fa fa-phone"></i> Phone: <a href="tel:5035555555">(503) 555-5555</a></p>
 					<p><i class="fa fa-map-marker"></i> Location: Saint Paul, Minnesota</p>
+					<p><i class="fa fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/abdinasir21" target="_blank">linkedin.com/in/abdinasir21</a></p>
+					<p><i class="fa fa-github"></i> GitHub: <a href="https://github.com/Abdinasir25" target="_blank">github.com/Abdinasir25</a></p>
+					<p>I usually respond within 24 hours. The best way to reach me is through email or by filling out the form on this page.</p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 contact-form">
 					<h2>Send Me a Message</h2>
-					<!-- Paste your Google Form embed code below. Get it from your Google Form: Send > Embed (< >). Adjust width="100%" and reduce the height so the Submit button is visible without scrolling. -->
-					<iframe src="" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					<!-- Google Form embed: width set to 100% so it fits the column, height adjusted so the Submit button is visible without scrolling -->
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLwDNjNv9Nb4C_tSvuR_tUDnuImIwSgMOqN5no6BsGPuLKZg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				</div>
 			</div>
 		</div>
@@ -51,13 +57,13 @@
 		<div class="container-fluid">
 			<div class="row footer1000">
 				<div class="col-sm-6">
-					<h4>Abdinasir Lee Portfolio</h4>
-					<p>This is the portfolio website of Abdinasir Lee, a computer science student at Saint Paul College.</p>
+					<h4>Abdinasir Portfolio</h4>
+					<p>This is the portfolio website of Abdinasir, a computer science student at Saint Paul College.</p>
 				</div>
 				<div class="col-sm-6">
 					<div class="footer-icons">
 						<h4>Let's Connect!</h4>
-					<a href="https://www.linkedin.com/in/abdinasir21" target="_blank">
+						<a href="https://www.linkedin.com/in/abdinasir21" target="_blank">
 							<h5><i class="fa fa-linkedin-square" aria-hidden="true"></i> Connect on LinkedIn</h5>
 						</a>
 						<a href="https://github.com/Abdinasir25" target="_blank">
@@ -71,11 +77,11 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<small>&copy; 2026 Abdinasir sharif. All rights reserved.</small>
+			<small>&copy; 2026 Abdinasir. All rights reserved.</small>
 		</div>
 	</footer>
 
-	<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<!-- jQuery, Popper, and Bootstrap Javascript files -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
