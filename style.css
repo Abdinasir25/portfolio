@@ -1,10 +1,11 @@
+/* Abdinasir Portfolio stylesheet. Custom font from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body{
    font-family: 'Fira Sans', sans-serif;
    margin: 0;
 }
 
-/* HEADER with logo */
+/* HEADER: logo on top, nav below, both centered (per Lab 13 feedback) */
 header{
    background-color: white;
    padding: 20px 20px;
@@ -17,7 +18,7 @@ header{
    display: block;
 }
 
-/* Navigation - centered and aligned with logo */
+/* Navigation: centered under the logo so they line up vertically */
 nav{
    background-color: white;
 }
@@ -41,9 +42,9 @@ nav a:hover{
    color: #c7f7f2;
 }
 
-/* HERO IMAGE */
+/* HERO IMAGE on the home page */
 .home-hero{
-   background-image: url("images/hero image abdinasir.jpg");
+   background-image: url("images/hero_image_abdinasir.jpg");
    background-size: cover;
    background-position: center;
    padding: 0;
@@ -58,12 +59,12 @@ nav a:hover{
    margin: 0;
 }
 
-/* MAIN */
+/* MAIN section default */
 main{
    padding: 0;
 }
 
-/* About Row */
+/* About Me row: larger text size for better balance with the side photo (per Lab 13 feedback) */
 .about-row{
    max-width: 1000px;
    margin: 60px auto;
@@ -84,7 +85,7 @@ main{
    font-size: 1.2em;
 }
 
-/* Navigational Row with icons */
+/* Navigational icons row on the home page */
 .nav-row{
    max-width: 1000px;
    margin: 60px auto;
@@ -108,7 +109,13 @@ main{
    margin-bottom: 20px;
 }
 
-/* GAME */
+/* GAME page */
+.game-page{
+   max-width: 1000px;
+   margin: 40px auto;
+   padding: 0 30px;
+   text-align: center;
+}
 canvas{
    border: 1px solid #d3d3d3;
    background-color: #f1f1f1;
@@ -129,7 +136,7 @@ canvas{
    margin: 0 5px;
 }
 
-/* FOOTER */
+/* FOOTER: full-width color band, content constrained to 1000px in the middle */
 footer{
    clear: both;
    background-color: #2d315c;
@@ -164,7 +171,7 @@ footer{
    padding: 15px;
 }
 
-/* Resume Page - paper look matching teacher's example */
+/* Resume page: paper-look box with narrower content width per teacher's instructions */
 .resume-paper{
    max-width: 700px;
    margin: 40px auto;
@@ -174,16 +181,49 @@ footer{
    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Contact Page */
-.contact-row{
-   margin-top: 30px;
-   margin-bottom: 60px;
+/* Contact page styles */
+.contact-header{
+   text-align: center;
    max-width: 1000px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 40px auto 20px auto;
+   padding: 0 30px;
 }
-.contact-row h2{
+.contact-header h1{
+   margin-bottom: 15px;
+}
+.contact-row{
+   max-width: 1000px;
+   margin: 30px auto 60px auto;
+   padding: 0 30px;
+}
+.contact-info,
+.contact-form{
+   padding: 20px;
+}
+.contact-info h2,
+.contact-form h2{
    margin-bottom: 20px;
 }
+.contact-info p{
+   margin-bottom: 12px;
+   line-height: 1.6;
+}
+.contact-info .fa{
+   color: #2d315c;
+   margin-right: 8px;
+   width: 20px;
+}
 
-/* JavaScri
+/* Game responsive controls: hide mobile buttons on desktop, swap on screens under 768px so only one set ever shows. Using .game-controls.mobile / .game-controls.desktop (more specific) so the rules can't accidentally be overridden. */
+.game-controls.mobile{
+   display: none;
+}
+@media only screen and (max-width: 768px){
+   .game-controls.desktop{
+      display: none;
+   }
+   .game-controls.mobile{
+      display: block;
+      touch-action: manipulation;
+   }
+}
